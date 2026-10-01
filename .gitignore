@@ -1,0 +1,4 @@
+.DS_Store
+
+# raw originals (200MB+), the site uses the compressed copies in assets/
+Lagoon Brand Assets/
