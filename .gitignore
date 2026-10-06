@@ -2,3 +2,20 @@
 
 # raw originals (200MB+), the site uses the compressed copies in assets/
 Lagoon Brand Assets/
+
+# raw B35 film scans from Drive (70MB)
+B35 raw/
+
+# raw source material: kept on this Mac only, the site uses compressed copies in assets/
+/Cousera/
+/Dream theater Onground/
+/Home pic/
+/Magazound 2/
+/magazound/
+/Overdrive Guitarcontest/
+/PMG Internship/
+/Thamasat University Folksong Club/
+/design-options/
+
+# project notes: private, stays on this Mac
+CLAUDE.md

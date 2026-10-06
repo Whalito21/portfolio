@@ -3,39 +3,50 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Chanon Boonsak (Bluewhale) — Portfolio</title>
-  <!-- TODO: meta description + Open Graph tags (SEO step) -->
+  <title data-i18n="home.title">Chanon Boonsak (Bluewhale) — Portfolio</title>
+  <meta name="description" content="Bangkok-based live music project manager and content strategist. Founder of lagoon.livemusic, content for Dream Theater's 40th Anniversary show at Prart Music Global, and more.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Chanon Boonsak · Portfolio">
+  <meta property="og:title" content="Chanon Boonsak (Bluewhale) — Portfolio">
+  <meta property="og:description" content="Bangkok-based live music project manager and content strategist. Founder of lagoon.livemusic, content for Dream Theater's 40th Anniversary show at Prart Music Global, and more.">
+  <meta property="og:url" content="https://whalito21.github.io/portfolio/">
+  <meta property="og:image" content="https://whalito21.github.io/portfolio/assets/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,700..900,100,1&family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,500..900,100,1&family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400..600&family=Anuphan:wght@400..600&family=Chonburi&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=39">
+  <script>try{if(localStorage.getItem('lang')==='th'){document.documentElement.lang='th';document.documentElement.classList.add('i18n-pending')}}catch(e){}</script>
 </head>
 <body>
   <div class="stripes" aria-hidden="true"></div>
 
   <div class="wrap">
     <header class="bar">
-      <a class="label" href="#top">Bluewhale</a>
+      <a class="label" href="#top" data-i18n="nav.portfolio">Portfolio</a>
       <nav class="label" aria-label="Main">
-        <a href="#work">Work</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+        <a href="#work" data-i18n="nav.work">Work</a>
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
       </nav>
+      <button class="lang-toggle" type="button" aria-label="เปลี่ยนเป็นภาษาไทย"><span lang="en">EN</span><span lang="th">ไทย</span></button>
     </header>
 
     <main id="top">
       <!-- HERO -->
       <section class="hero">
-        <div>
-          <span class="label">Bangkok, Thailand</span>
-          <h1>Chanon<br><em>Boonsak</em></h1>
-          <div class="hero__lines">
-            <span class="todo">[WRITE: role line, e.g. what you call yourself]</span>
-            <span class="todo">[WRITE: one sentence on what you do and for whom]</span>
-          </div>
+        <div class="hero__text">
+          <span class="label" data-i18n="home.where">Bangkok, Thailand</span>
+          <h1 class="name-swap" aria-label="Chanon Boonsak, ชนน บุญศักดิ์">
+            <span class="name-swap__en" lang="en" aria-hidden="true">Chanon<br><em>Boonsak</em></span>
+            <span class="name-swap__th" lang="th" aria-hidden="true">ชนน<br><em>บุญศักดิ์</em></span>
+          </h1>
           <div class="cta">
-            <a class="btn btn--solid" href="resume.pdf" download>Download Resume</a>
-            <a class="btn" href="#contact">Contact</a>
+            <a class="btn btn--solid" href="resume.pdf" download data-i18n="home.resume">Download Resume</a>
+            <a class="btn" href="#contact" data-i18n="home.contactBtn">Contact</a>
           </div>
         </div>
         <div class="arch">
@@ -43,62 +54,57 @@
           <div class="arch__ring"></div>
           <div class="arch__ring"></div>
           <div class="arch__ring"></div>
-          <div class="arch__ring arch__photo"><img src="assets/images/home/me.jpg" width="340" height="612" alt="Chanon Boonsak smiling and making a peace sign, in a black Lagoon crew shirt"></div>
+          <div class="arch__ring arch__photo"><img src="assets/images/home/me.jpg?v=3" width="450" height="810" alt="Chanon Boonsak on stage holding a plaque"></div>
           <div class="arch__sun"></div>
         </div>
       </section>
 
       <!-- SELECTED WORK -->
       <section class="work" id="work">
-        <h2 class="section-title">Selected work</h2>
+        <h2 class="section-title" data-i18n="home.work">Selected work</h2>
         <div class="cards">
           <a class="card" href="projects/lagoon.html">
-            <div class="card__cover cover--orange"><img src="assets/images/lagoon/cover.jpg" width="1120" height="700" loading="lazy" alt="AYLA'S on stage at a lagoon.livemusic show, light beams over the crowd"></div>
+            <div class="card__cover cover--orange"><img src="assets/images/lagoon/stage-lagoon-beams.jpg" width="1200" height="800" loading="lazy" alt="Band on stage under blue light beams, the Lagoon logo on the screen behind them"></div>
             <div class="card__meta">
-              <span class="label">01 · Founder &amp; Project Manager · Aug 2025 – Jun 2026</span>
+              <span class="label" data-i18n="home.c1.meta">01 · Founder &amp; Project Manager · Aug 2025 – Jun 2026</span>
               <h3>lagoon.livemusic</h3>
-              <span class="todo">[WRITE: 1–2 lines about the project]</span>
-              <span class="result">Sold out a 400-capacity show</span>
+              <span class="result" data-i18n="home.c1.result">Produced 4 full-production shows with 10 acts</span>
             </div>
           </a>
 
           <a class="card" href="projects/pmg-dream-theater.html">
-            <div class="card__cover cover--teal"><span class="label">[IMG: PMG cover]</span></div>
+            <div class="card__cover cover--teal card__cover--logo"><img src="assets/images/pmg/pmg-logo.jpg?v=2" width="600" height="433" loading="lazy" alt="Prart Music Global (PMG) logo"></div>
             <div class="card__meta">
-              <span class="label">02 · Project Coordinator · Jan – May 2026</span>
-              <h3>PMG × Dream Theater</h3>
-              <span class="todo">[WRITE: 1–2 lines]</span>
-              <span class="result">85,534 impressions, no paid spend</span>
+              <span class="label" data-i18n="home.c2.meta">02 · Project Coordinator Intern · Jan – May 2026</span>
+              <h3 data-i18n="home.c2.title">Internship at Prart Music Global</h3>
+              <span class="result" data-i18n="home.c2.result">Dream Theater 40th Anniversary campaign &amp; Overdrive Guitar Contest</span>
             </div>
           </a>
 
           <a class="card" href="projects/magazound.html">
-            <div class="card__cover cover--mustard"><span class="label">[IMG: Magazound cover]</span></div>
+            <div class="card__cover cover--mustard"><img src="assets/images/magazound/fashion-show.jpg" width="1200" height="800" loading="lazy" alt="Students modelling upcycled outfits at Magazound"></div>
             <div class="card__meta">
-              <span class="label">03 · Project Manager &amp; Creative · Mar 2024</span>
+              <span class="label" data-i18n="home.c3.meta">03 · Project Manager &amp; Creative · Mar 2024</span>
               <h3>Magazound</h3>
-              <span class="todo">[WRITE: 1–2 lines]</span>
-              <span class="result">~600 attendees, closed without a loss</span>
+              <span class="result" data-i18n="home.c3.result">Fashion × music festival</span>
             </div>
           </a>
 
           <a class="card" href="projects/b35.html">
-            <div class="card__cover cover--rust"><span class="label">[IMG: B35 cover]</span></div>
+            <div class="card__cover cover--rust"><img src="assets/images/b35/film-410030.jpg" width="1200" height="795" loading="lazy" alt="B35 in a field of tall grass, shot on film"></div>
             <div class="card__meta">
-              <span class="label">04 · Band Assistant &amp; Photographer · <span class="todo">[dates]</span></span>
-              <h3>B35</h3>
-              <span class="todo">[WRITE: 1–2 lines]</span>
-              <span class="todo">[WRITE: one result / number, if any]</span>
+              <span class="label" data-i18n="home.c4.meta">04 · Band Assistant &amp; Photographer · Dec 2024 – 2025</span>
+              <h3 data-i18n="home.c4.title">B35 at Wonderfruit</h3>
+              <span class="result" data-i18n="home.c4.result">Thai-jazz band, shot on film</span>
             </div>
           </a>
 
-          <a class="card" href="projects/larn-folk-2.html">
-            <div class="card__cover cover--night"><span class="label">[IMG: Larn Folk 2 cover]</span></div>
+          <a class="card" href="projects/tu-folksong.html">
+            <div class="card__cover cover--night"><img src="assets/images/tu-folksong/stage.jpg" width="1400" height="1050" loading="lazy" alt="The Thammasat University Folksong Club stage with its yellow backdrop"></div>
             <div class="card__meta">
-              <span class="label">05 · Creative &amp; PR · Nov 2023</span>
-              <h3>Larn Folk 2</h3>
-              <span class="todo">[WRITE: 1–2 lines]</span>
-              <span class="result">"The Atlantis" theme voted #1</span>
+              <span class="label" data-i18n="home.c5.meta">05 · Bassist, PR &amp; Welfare · 2023 – 2024</span>
+              <h3 data-i18n="home.c5.title">TU Folksong Club</h3>
+              <span class="result" data-i18n="home.c5.result">Larn Folk 2 PR campaign &amp; Folk Camp</span>
             </div>
           </a>
         </div>
@@ -107,35 +113,76 @@
       <!-- ABOUT -->
       <section class="about" id="about">
         <div class="about__text">
-          <h2 class="section-title">About</h2>
-          <span class="todo">[WRITE: 3–4 lines about you: what you do, what you're looking for next]</span>
+          <h2 class="section-title" data-i18n="home.about">About</h2>
         </div>
         <aside class="edu">
-          <span class="label">Education</span>
-          <h3>Silpakorn University, Faculty of Music</h3>
-          <p>BA Music Industry (Music &amp; Entertainment Business)</p>
-          <p class="label">2022 – 2026 · GPAX 3.56</p>
-          <p><strong>Thesis:</strong> small-scale concert management through Gen Z audience experience at Bangkok live houses</p>
+          <span class="label" data-i18n="home.edu">Education</span>
+          <div class="school">
+            <img class="school__logo" src="assets/images/about/su.png" width="180" height="180" loading="lazy" alt="Silpakorn University emblem">
+            <div>
+              <h3 data-i18n="home.su">Silpakorn University, Faculty of Music</h3>
+              <p data-i18n="home.su.degree">Bachelor of Arts (B.A.), Music and Entertainment Business</p>
+              <p class="label" data-i18n="home.su.years">2022 – 2026 · GPAX 3.56</p>
+            </div>
+          </div>
+          <div class="school">
+            <img class="school__logo" src="assets/images/about/skw.png" width="180" height="180" loading="lazy" alt="Suankularb Wittayalai School emblem">
+            <div>
+              <h3 data-i18n="home.skw">Suankularb Wittayalai School</h3>
+              <p class="label" data-i18n="home.skw.level">High school</p>
+            </div>
+          </div>
         </aside>
+
+        <div class="certs">
+          <span class="label" data-i18n="home.certs">Certifications · Coursera</span>
+          <ul>
+            <li>
+              <a class="certs__img" href="assets/images/about/cert-berklee-music-business.jpg" data-lightbox><img src="assets/images/about/cert-berklee-music-business.jpg" width="1870" height="1445" loading="lazy" alt="Coursera certificate: Music Business Foundations, Berklee, April 2023"></a>
+              <span class="label" data-i18n="home.cert1.meta">Berklee · Apr 2023</span>
+              <h3>Music Business Foundations</h3>
+              <a class="certs__verify label" href="https://coursera.org/verify/JDFWFA7GPC72" target="_blank" rel="noopener" data-i18n="home.verify">Verify ↗</a>
+            </li>
+            <li>
+              <a class="certs__img" href="assets/images/about/cert-google-project-management.jpg" data-lightbox><img src="assets/images/about/cert-google-project-management.jpg" width="1870" height="1445" loading="lazy" alt="Coursera certificate: Foundations of Project Management, Google, August 2023"></a>
+              <span class="label" data-i18n="home.cert2.meta">Google · Aug 2023</span>
+              <h3>Foundations of Project Management</h3>
+              <a class="certs__verify label" href="https://coursera.org/verify/6WUXYUPDFS67" target="_blank" rel="noopener" data-i18n="home.verify">Verify ↗</a>
+            </li>
+            <li>
+              <a class="certs__img" href="assets/images/about/cert-google-digital-marketing.jpg" data-lightbox><img src="assets/images/about/cert-google-digital-marketing.jpg" width="1870" height="1445" loading="lazy" alt="Coursera certificate: Foundations of Digital Marketing and E-commerce, Google, July 2024"></a>
+              <span class="label" data-i18n="home.cert3.meta">Google · Jul 2024</span>
+              <h3>Foundations of Digital Marketing &amp; E-commerce</h3>
+              <a class="certs__verify label" href="https://coursera.org/verify/NZZ3KZNKG7FP" target="_blank" rel="noopener" data-i18n="home.verify">Verify ↗</a>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- CONTACT -->
       <section class="contact" id="contact">
-        <h2 class="section-title">Let's talk</h2>
-        <span class="todo">[WRITE: one line inviting people to get in touch]</span>
+        <h2 class="section-title" data-i18n="home.talk">Let's talk</h2>
         <ul class="contact__links">
           <li><a href="mailto:bluewhale55470@gmail.com">bluewhale55470@gmail.com</a></li>
-          <li><a href="https://www.instagram.com/lagoon.livemusic/" target="_blank" rel="noopener">IG @lagoon.livemusic</a></li>
+          <li><a href="tel:+66855565000" data-i18n="home.tel">Tel. 085-556-5000</a></li>
+          <li><a href="https://www.instagram.com/bluewhaleintheblueocean/" target="_blank" rel="noopener">IG @bluewhaleintheblueocean</a></li>
         </ul>
         <div class="cta">
-          <a class="btn btn--solid" href="resume.pdf" download>Download Resume</a>
+          <a class="btn btn--solid" href="resume.pdf" download data-i18n="home.resume">Download Resume</a>
         </div>
       </section>
     </main>
 
-    <footer class="footer label">Bangkok, Thailand · © 2026 Chanon Boonsak</footer>
+    <footer class="footer label" data-i18n="footer">Bangkok, Thailand · © 2026 Chanon Boonsak</footer>
   </div>
 
   <div class="stripes stripes--bottom" aria-hidden="true"></div>
+  <dialog class="lightbox" id="lightbox" aria-label="Image preview">
+    <button class="lightbox__close" type="button" aria-label="Close">×</button>
+    <img src="" alt="">
+  </dialog>
+
+  <script src="js/main.js?v=5"></script>
+  <script src="js/i18n.js?v=4"></script>
 </body>
 </html>
