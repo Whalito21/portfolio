@@ -556,7 +556,7 @@ mark {
 
 @media (min-width: 760px) {
   .target { grid-template-columns: auto 1fr; gap: 32px; }
-  .values { grid-template-columns: repeat(3, 1fr); }
+  .values { grid-template-columns: repeat(2, 1fr); }
   .strategy { grid-template-columns: 1fr 1fr; }
   .flow-steps { grid-template-columns: repeat(3, 1fr); }
   .flow-steps li:not(:last-child)::after { content: "→"; position: absolute; right: -10px; top: 50%; transform: translate(50%, -50%); z-index: 1; font: 900 22px/1 var(--display); color: var(--orange); }
@@ -1053,3 +1053,7 @@ main, .bar, .footer { transition: opacity .25s ease; }
   html[lang="th"] .name-swap__th { opacity: 1; }
   main, .bar, .footer, .lang-toggle span { transition: none; }
 }
+
+/* PMG: audience note under the target map */
+.target__note { margin: 0; padding: 14px 18px; border-left: 3px solid var(--teal); background: var(--night-2); border-radius: 0 12px 12px 0; color: rgba(243, 231, 207, .85); }
+.target__note b { display: block; margin-bottom: 2px; font: 800 18px/1.2 var(--display); font-variation-settings: "SOFT" 100, "WONK" 1; color: var(--cream); }
