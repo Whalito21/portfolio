@@ -273,7 +273,7 @@ const TEXT = {
   'Like pairing gaeng tai pla with wine.': 'เหมือนกินแกงไตปลาคู่กับไวน์',
   "They invited me to Wonderfruit two years running, in 2024 and 2025, as their photographer and all-round assistant. I'm going with them again in 2026.": 'วงชวนผมไป Wonderfruit สองปีติด ปี 2567 และ 2568 ในฐานะช่างภาพและผู้ช่วยทุกอย่าง และปี 2569 นี้ผมก็จะไปกับเขาอีก',
   'Listen while you scroll': 'ฟังไปด้วยระหว่างเลื่อนดู',
-  "Moved the band's instruments and members around the festival site": 'ขน<mark>เครื่องดนตรีและสมาชิกวง</mark>ไปมาในพื้นที่เฟสติวัล',
+  "Moved the band's instruments and members around the festival site": 'เคลื่อนย้าย<mark>เครื่องดนตรีและสมาชิกวง</mark>ภายในพื้นที่เฟสติวัล',
   'Helped the gig run smoothly, from arrival to the evening set': 'ช่วยให้งาน<mark>ราบรื่น</mark> ตั้งแต่มาถึงจนถึงโชว์ช่วงเย็น',
   "Shot the band on film, with my father's Yashica FX-3 Super 2000": 'ถ่ายรูปวง<mark>ด้วยฟิล์ม</mark> กับกล้อง Yashica FX-3 Super 2000 ของพ่อ',
   'Roll 1 · Daylight': 'ม้วนที่ 1 · กลางวัน',
