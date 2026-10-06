@@ -150,22 +150,24 @@
     const reader = document.getElementById(btn.dataset.readerOpen);
     if (!reader || typeof reader.showModal !== 'function') return;
 
+    const tabs = reader.querySelectorAll('[role="tab"]');
+    const showLang = (lang) => {
+      tabs.forEach((t) => t.setAttribute('aria-selected', String(t.dataset.lang === lang)));
+      reader.querySelectorAll('.reader__text').forEach((text) => { text.hidden = text.dataset.lang !== lang; });
+      reader.querySelector('.reader__scroll').scrollTop = 0;
+    };
+
     btn.addEventListener('click', () => {
       btn.classList.remove('is-glowing');
+      // open on the site's current language (Thai site → Thai caption first)
+      showLang(document.documentElement.lang === 'th' ? 'th' : 'en');
       reader.showModal();
     });
     reader.querySelector('.reader__close').addEventListener('click', () => reader.close());
     // click on the dimmed backdrop (outside the panel) closes it
     reader.addEventListener('click', (e) => { if (e.target === reader) reader.close(); });
 
-    const tabs = reader.querySelectorAll('[role="tab"]');
-    tabs.forEach((tab) => tab.addEventListener('click', () => {
-      tabs.forEach((t) => t.setAttribute('aria-selected', String(t === tab)));
-      reader.querySelectorAll('.reader__text').forEach((text) => {
-        text.hidden = text.dataset.lang !== tab.dataset.lang;
-      });
-      reader.querySelector('.reader__scroll').scrollTop = 0;
-    }));
+    tabs.forEach((tab) => tab.addEventListener('click', () => showLang(tab.dataset.lang)));
   });
 
   if (!('IntersectionObserver' in window)) return;
