@@ -889,18 +889,18 @@ html:has(.reader[open]) { overflow: hidden; }
 .golden__cap { margin: 8px 0 0; color: rgba(243, 231, 207, .6); }
 
 /* roll 2: the page turns to night (blue beams like the night shots) */
-.night { position: relative; overflow: hidden; isolation: isolate; border-radius: var(--radius); padding: 40px 18px 28px; margin-top: 8px; background: radial-gradient(120% 70% at 50% 0%, #163A5C 0%, #0C1B2C 55%, #08111C 100%); }
+.night { position: relative; overflow: hidden; isolation: isolate; border-radius: var(--radius); padding: 40px 18px 28px; margin-top: 8px; background: radial-gradient(120% 70% at 50% 0%, rgba(47, 127, 121, .28) 0%, var(--night-2) 55%); border-top: 6px solid var(--teal); }
 .night::before {
   content: ""; position: absolute; z-index: -1; inset: -10% -20% 30%;
-  background: conic-gradient(from 160deg at 50% 0%, transparent 0deg, rgba(120, 200, 255, .16) 4deg, transparent 8deg, transparent 14deg, rgba(120, 200, 255, .12) 17deg, transparent 21deg, transparent 27deg, rgba(47, 127, 121, .22) 31deg, transparent 36deg, transparent 360deg);
+  background: conic-gradient(from 160deg at 50% 0%, transparent 0deg, rgba(244, 230, 204, .07) 4deg, transparent 8deg, transparent 14deg, rgba(244, 230, 204, .05) 17deg, transparent 21deg, transparent 27deg, rgba(47, 127, 121, .16) 31deg, transparent 36deg, transparent 360deg);
 }
 .night__head { display: grid; gap: 6px; margin-bottom: 24px; }
-.night__head .label { color: #8FD3FF; }
+.night__head .label { color: var(--mustard); }
 .night__head h2 { font-size: clamp(32px, 7vw, 52px); line-height: 1; }
 .night__head p { margin: 0; color: rgba(243, 231, 207, .75); }
 .night__grid { list-style: none; margin: 0; padding: 0 0 18px; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 .night__grid li:nth-child(even) { transform: translateY(18px); }
-.night__grid a { display: block; border-radius: 4px; overflow: hidden; box-shadow: 0 0 0 1px rgba(143, 211, 255, .15), 0 14px 30px rgba(0, 0, 0, .5); }
+.night__grid a { display: block; border-radius: 4px; overflow: hidden; box-shadow: 0 0 0 1px rgba(244, 230, 204, .1), 0 14px 30px rgba(0, 0, 0, .5); }
 .night__grid img { width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; transition: transform .3s ease; }
 .night__grid a:hover img, .night__grid a:focus-visible img { transform: scale(1.04); }
 .night + .credit { margin-top: 24px; }
@@ -957,18 +957,8 @@ html:has(.reader[open]) { overflow: hidden; }
 
 /* Part 1: under the sea (The Atlantis palette: deep blue, purple, a pink accent) */
 .part--sea, .part--camp { position: relative; overflow: hidden; isolation: isolate; border-top: 0; border-radius: var(--radius); padding: 32px 22px; margin-top: 32px; }
-.part--sea {
-  background:
-    radial-gradient(circle at 12% 78%, rgba(255, 255, 255, .22) 0 3px, transparent 4px),
-    radial-gradient(circle at 18% 58%, rgba(255, 255, 255, .16) 0 5px, transparent 6px),
-    radial-gradient(circle at 84% 30%, rgba(255, 255, 255, .18) 0 4px, transparent 5px),
-    radial-gradient(circle at 90% 62%, rgba(255, 255, 255, .12) 0 7px, transparent 8px),
-    radial-gradient(circle at 76% 84%, rgba(255, 255, 255, .2) 0 2px, transparent 3px),
-    radial-gradient(120% 90% at 50% 0%, #2A5B8F 0%, #1C2B63 45%, #2A1A4E 80%, #1A1230 100%);
-}
-.part--sea::after { content: ""; position: absolute; z-index: -1; inset: 0; background: repeating-radial-gradient(ellipse at 50% -40%, transparent 0 26px, rgba(143, 211, 255, .06) 26px 28px); }
-.part--sea .label { color: #F6A8C8; }
-.part--sea .part__role li { border-color: rgba(246, 168, 200, .5); }
+.part--sea { background: var(--night-2); border-top: 6px solid var(--teal); }
+.part--sea::after { content: ""; position: absolute; z-index: -1; right: -120px; top: 50%; width: 460px; aspect-ratio: 1; transform: translateY(-50%); border-radius: 50%; background: repeating-radial-gradient(circle, rgba(47, 127, 121, .22) 0 12px, transparent 12px 26px); }
 
 /* Part 2: a warm night at camp, with a string of fairy lights */
 .part--camp { padding-top: 46px; background: radial-gradient(120% 100% at 50% 0%, #3A2A1C 0%, var(--night-2) 60%); }
@@ -982,7 +972,7 @@ html:has(.reader[open]) { overflow: hidden; }
 
 /* sea glow behind the poster phone */
 .ig-phone { position: relative; }
-.ig-phone::before { content: ""; position: absolute; z-index: -1; inset: -24px; border-radius: 50%; background: radial-gradient(closest-side, rgba(110, 120, 230, .45), rgba(246, 168, 200, .15), transparent); }
+.ig-phone::before { content: ""; position: absolute; z-index: -1; inset: -24px; border-radius: 50%; background: radial-gradient(closest-side, rgba(47, 127, 121, .45), rgba(242, 165, 65, .12), transparent); }
 .ig-row { isolation: isolate; }
 
 @media (min-width: 760px) {
