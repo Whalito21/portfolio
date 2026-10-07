@@ -299,7 +299,7 @@ const TEXT = {
   'Thammasat University, Rangsit': 'ม.ธรรมศาสตร์ รังสิต',
   'The club': 'เกี่ยวกับชุมนุม',
   'TU Folksong goes back to the 1980s. Since 2004, members join by audition and are placed in "houses" named after musical symbols. The club\'s stage is Larn Folk, a concert series run entirely by its members.': 'TU Folksong มีประวัติย้อนไปถึงช่วงปี 2520 ตั้งแต่ปี 2547 สมาชิกต้องเข้าผ่าน<mark>การออดิชัน</mark> และถูกแบ่งเป็น "บ้าน" ที่ตั้งชื่อตามสัญลักษณ์ทางดนตรี เวทีของชุมนุมคือ ลานโฟล์ค คอนเสิร์ตที่สมาชิกจัดเองทั้งหมด',
-  'The audition is open to students from any university. I auditioned in my second year and got in as a bassist.': 'ออดิชันเปิดให้นักศึกษาจาก<mark>ทุกมหาวิทยาลัย</mark> ผมไปออดิชันตอนปี 2 และได้เข้ามาเป็น<mark>มือเบส</mark>',
+  'The audition is open to students from any university. I auditioned in my second year, got in on bass, and later joined the PR team.': 'ออดิชันเปิดให้นักศึกษาจาก<mark>ทุกมหาวิทยาลัย</mark> ผมไปออดิชันตอนปี 2 และได้เข้ามาเป็น<mark>พาร์ทเบส</mark> และ<mark>ทีมประชาสัมพันธ์</mark>ในเวลาต่อมา',
   'Part 1 · PR team': 'พาร์ท 1 · ทีม PR',
   'Larn Folk 2: The Atlantis': 'ลานโฟล์ค 2: The Atlantis',
   '23 Nov 2023, 17:00 · SCI, Thammasat University, Rangsit': '23 พ.ย. 2566, 17:00 · SCI ม.ธรรมศาสตร์ รังสิต',
