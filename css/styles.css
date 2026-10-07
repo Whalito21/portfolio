@@ -1069,3 +1069,11 @@ html[lang="th"] .memo__goals b { line-height: 1.4; }
   --night: #0A0A0A;
   --night-2: #181818;
 }
+
+/* header (language switch + menu) always on top while scrolling */
+.bar { position: sticky; top: 0; z-index: 60; background: var(--night); }
+/* full-width background without a giant shadow (Safari drops clip-path on stuck elements) */
+.bar::before { content: ""; position: absolute; z-index: -1; top: 0; bottom: 0; left: calc(50% - 50vw); right: calc(50% - 50vw); background: var(--night); pointer-events: none; }
+html { scroll-padding-top: 80px; }
+@media (max-width: 600px) { html { scroll-padding-top: 108px; } }
+html, body { overflow-x: clip; }   /* the full-width header background must never cause sideways scroll */
