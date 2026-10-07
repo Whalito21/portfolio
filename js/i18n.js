@@ -72,6 +72,10 @@ const TEXT = {
   'Internship at Prart Music Global': 'ฝึกงานที่ Prart Music Global',
   'TU Folksong Club': 'ชุมนุม TU Folksong',
 
+  // ---- last project → About ----
+  'Next · Education & certificates': 'ถัดไป · การศึกษาและใบประกาศนียบัตร',
+  'About me': 'เกี่ยวกับผม',
+
   // ---- lagoon ----
   'lagoon.livemusic — Chanon Boonsak (Bluewhale)': 'lagoon.livemusic — ชนน บุญศักดิ์ (Bluewhale)',
   'Aug 2025 – Jun 2026': 'ส.ค. 2568 – มิ.ย. 2569',
